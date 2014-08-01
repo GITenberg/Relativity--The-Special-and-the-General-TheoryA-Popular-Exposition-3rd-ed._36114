@@ -1,0 +1,42 @@
+%% Generated from 032.xp on Wed May 11 10:08:49 EDT 2011 by
+%% ePiX-1.2.4
+%% 
+%%   Cartesian bounding box: [0,1.5] x [0,1]
+%%   Actual size: 2.4 x 1.6in
+%%   Figure offset: left by 0in, down by 0in
+%% 
+%% usepackages tikz
+%% 
+\xdefinecolor{rgb_000000}{rgb}{0,0,0}%
+\begin{tikzpicture}
+\pgfsetlinewidth{0.4pt}
+\useasboundingbox (0in,0in) rectangle (2.4in,1.6in);
+\pgfsetlinewidth{0.8pt}
+\draw (0in,0in)--(1.2in,0in)--(2.4in,0in);
+\draw (0in,0in)--(0.32in,0.32in)--(0.64in,0.64in);
+\draw (0in,0in)--(0in,0.8in)--(0in,1.6in);
+\draw (0.8in,0.08in)--(1.6in,0.08in)--(2.4in,0.08in);
+\draw (0.8in,0.08in)--(1.12in,0.4in)--(1.44in,0.72in);
+\draw (0.8in,0.08in)--(0.8in,0.88in)--(0.8in,1.68in);
+\draw (1.04in,0.16in)--(1.44in,0.16in);
+\pgfsetfillcolor{rgb_000000}
+\draw [fill](1.42616in,0.16in)--(1.41233in,0.146163in)--
+  (1.44in,0.16in)--(1.41233in,0.173837in)--(1.42616in,0.16in)--cycle;
+\pgftext[at={\pgfpoint{1.12302in}{0.187674in}}] {\makebox(0,0)[bl]{\hbox{\color{rgb_000000}$v$}}}
+\draw (1.44in,0.64in)--(1.84in,0.64in);
+\draw [fill](1.82616in,0.64in)--(1.81233in,0.626163in)--
+  (1.84in,0.64in)--(1.81233in,0.653837in)--(1.82616in,0.64in)--cycle;
+\pgftext[at={\pgfpoint{1.46767in}{0.584652in}}] {\makebox(0,0)[tl]{\hbox{\color{rgb_000000}$v$}}}
+\draw (0.88in,1.6in)--(1.28in,1.6in);
+\draw [fill](1.26616in,1.6in)--(1.25233in,1.58616in)--
+  (1.28in,1.6in)--(1.25233in,1.61384in)--(1.26616in,1.6in)--cycle;
+\pgftext[at={\pgfpoint{0.907674in}{1.54465in}}] {\makebox(0,0)[tl]{\hbox{\color{rgb_000000}$v$}}}
+\pgftext[at={\pgfpoint{0in}{-0.055348in}}] {\makebox(0,0)[t]{\hbox{\color{rgb_000000}$K$}}}
+\pgftext[at={\pgfpoint{0.8in}{-0.055348in}}] {\makebox(0,0)[t]{\hbox{\color{rgb_000000}$K'$}}}
+\pgftext[at={\pgfpoint{2.42767in}{-0.027674in}}] {\makebox(0,0)[tl]{\hbox{\color{rgb_000000}$x$}}}
+\pgftext[at={\pgfpoint{2.42767in}{0.107674in}}] {\makebox(0,0)[bl]{\hbox{\color{rgb_000000}$x'$}}}
+\pgftext[at={\pgfpoint{0.612326in}{0.667674in}}] {\makebox(0,0)[br]{\hbox{\color{rgb_000000}$y$}}}
+\pgftext[at={\pgfpoint{1.41233in}{0.747674in}}] {\makebox(0,0)[br]{\hbox{\color{rgb_000000}$y'$}}}
+\pgftext[at={\pgfpoint{0in}{1.62767in}}] {\makebox(0,0)[b]{\hbox{\color{rgb_000000}$z$}}}
+\pgftext[at={\pgfpoint{0.8in}{1.70767in}}] {\makebox(0,0)[b]{\hbox{\color{rgb_000000}$z'$}}}
+\end{tikzpicture}

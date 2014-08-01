@@ -1,0 +1,51 @@
+/* -*-ePiX-*- */
+#include "epix.h"
+using namespace ePiX;
+
+double mA(-1), mB(1), mM(0), dx(0.5), dy(0.1);
+
+void veloc(const P& loc, const P& off,
+	   const std::string& msg, epix_label_posn A)
+{
+  arrow(loc, loc + P(dx,0));
+  label(loc, off, msg, A);
+}
+
+int main()
+{
+  picture(P(-2,-0.25), P(2,0.25), "4 x 0.5in");
+
+  begin();
+  bold();
+  arrow_inset(0.5);
+  arrow_ratio(2);
+  arrow_width(2);
+
+  line(P(xmin(), 0), P(xmax(), 0));
+  line(P(xmin()+0.25, dy), P(xmax()-0.25, dy));
+  line(P(xmax()-0.25, dy), P(xmax()-0.15, dy + 0.1));
+
+  h_axis_tick(P(mM,0));
+  h_axis_tick(P(mM,dy));
+
+  tick_size(6);
+  h_axis_tick(P(mA,0));
+  h_axis_tick(P(mA,dy));
+
+  h_axis_tick(P(mB,0));
+  h_axis_tick(P(mB,dy));
+
+  veloc(P(xmin()+0.25, 2*dy), P(2,2), "$v$", tr);
+  veloc(P(mB+0.25, 2*dy), P(2,2), "$v$", tr);
+  veloc(P(mM+0.125, 3*dy), P(-4,0), "$M'$", l);
+
+  label(P(mA,0), P(0,-10), "$A$", b);
+  label(P(mM,0), P(0,-10), "$M$", b);
+  label(P(mB,0), P(0,-10), "$B$", b);
+
+  label(P(xmax()-0.15, dy + 0.1), P(4,0), "\\textit{Train}", r);
+  label(P(xmax(), 0), P(-24,-8), "\\textit{Embankment}", br);
+
+  tikz_format();
+  end();
+}

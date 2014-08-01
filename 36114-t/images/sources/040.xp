@@ -1,0 +1,33 @@
+/* -*-ePiX-*- */
+#include "epix.h"
+using namespace ePiX;
+
+double dx(0.5), rad(0.125);
+
+void veloc(const P& loc, const P& off,
+	   const std::string& msg, epix_label_posn A)
+{
+  arrow(loc, loc + P(dx,0));
+  label(loc + 0.5*dx, off, msg, A);
+}
+
+int main()
+{
+  picture(P(0,-rad), P(3,rad), "3 x 0.3in");
+
+  begin();
+  bold();
+  arrow_inset(0.5);
+  arrow_ratio(2);
+  arrow_width(2);
+
+  line(P(xmin(), -rad), P(xmax(), -rad));
+  line(P(xmin(),  rad), P(xmax(),  rad));
+
+  veloc(P(dx, 0), P(0,2), "$v$", t);
+
+  label(P(0.5*xmax(), ymax()), P(0,2), "$T$", t);
+
+  tikz_format();
+  end();
+}

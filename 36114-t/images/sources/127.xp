@@ -1,0 +1,49 @@
+/* -*-ePiX-*- */
+#include "epix.h"
+using namespace ePiX;
+
+int main()
+{
+  picture(P(0,0), P(1,3), "1 x 3in");
+
+  begin();
+  bold();
+  arrow_inset(0.5);
+  arrow_ratio(2);
+  arrow_width(2);
+  double rad(0.125);
+
+  P dir(0.25, 1), perp(-rad*J(dir)), sun(dir), earth(perp), bend(sun + 3*perp),
+    D1a(earth + 0.6*dir), D2(0.3*earth + 0.7*bend), D1b(bend + 1.7*dir);
+
+  double th(Atan2(perp.x2(), perp.x1()));
+
+  line(sun, sun + 3*perp);
+
+  dashed();
+  dash_size(12);
+  line(earth, earth + 1.8*dir);
+  line(earth, bend);
+  line(bend, bend + 1.8*dir);
+
+  arrow(D1a, D1a + 0.01*dir);
+  arrow(D2, D2 + 0.01*(bend - earth));
+  arrow(D1b, D1b + 0.01*dir);
+
+  pen(2);
+  circle(sun, rad);
+
+  label(sun - P(rad, 0), P(-2,0), "$S$", l);
+  dot(earth, P(-2,-2), "$E$", bl);
+
+  label(D1a, P(-4,0), "$D_{1}$", l);
+  label(D2, P( 4,0), "$D_{2}$", r);
+  label(D1b, P( 4,0), "$D_{1}$", r);
+
+  label_angle(th);
+  label(sun + 0.15*dir + 1.5*perp,
+	"$\\overbrace{\\rule{0.35in}{0pt}}^{\\mbox{\\;$\\Delta$}}$");
+
+  tikz_format();
+  end();
+}

@@ -1,0 +1,23 @@
+%% Generated from 040.xp on Wed May 11 10:28:32 EDT 2011 by
+%% ePiX-1.2.4
+%% 
+%%   Cartesian bounding box: [0,3] x [-0.125,0.125]
+%%   Actual size: 3 x 0.3in
+%%   Figure offset: left by 0in, down by 0in
+%% 
+%% usepackages tikz
+%% 
+\xdefinecolor{rgb_000000}{rgb}{0,0,0}%
+\begin{tikzpicture}
+\pgfsetlinewidth{0.4pt}
+\useasboundingbox (0in,0in) rectangle (3in,0.3in);
+\pgfsetlinewidth{0.8pt}
+\draw (0in,0in)--(1.5in,0in)--(3in,0in);
+\draw (0in,0.3in)--(1.5in,0.3in)--(3in,0.3in);
+\draw (0.5in,0.15in)--(1in,0.15in);
+\pgfsetfillcolor{rgb_000000}
+\draw [fill](0.986163in,0.15in)--(0.972326in,0.136163in)--
+  (1in,0.15in)--(0.972326in,0.163837in)--(0.986163in,0.15in)--cycle;
+\pgftext[at={\pgfpoint{0.75in}{0.177674in}}] {\makebox(0,0)[b]{\hbox{\color{rgb_000000}$v$}}}
+\pgftext[at={\pgfpoint{1.5in}{0.327674in}}] {\makebox(0,0)[b]{\hbox{\color{rgb_000000}$T$}}}
+\end{tikzpicture}

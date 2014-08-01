@@ -1,0 +1,55 @@
+/* -*-ePiX-*- */
+#include "epix.h"
+using namespace ePiX;
+
+double dx(0.5), dy(0.05), sc(0.8);
+
+void veloc(const P& loc, const P& off,
+	   const std::string& msg, epix_label_posn A)
+{
+  arrow(loc, loc + P(0.5*dx,0));
+  label(loc, off, msg, A);
+}
+
+int main()
+{
+  picture(P(0,0), P(1.5,1), "2.4 x 1.6in");
+
+  begin();
+  bold();
+  arrow_inset(0.5);
+  arrow_ratio(2);
+  arrow_width(2);
+
+  P O1(0,0), O2(dx, dy),
+    pX1(xmax(), 0), pX2(xmax(), dy),
+    pY1(sc*dx, sc*dx), pY2(O2 + pY1),
+    pZ1(0,ymax()), pZ2(O2 + pZ1);
+
+  line(O1, pX1);
+  line(O1, pY1);
+  line(O1, pZ1);
+
+  line(O2, pX2);
+  line(O2, pY2);
+  line(O2, pZ2);
+
+  veloc(O2 + P(3*dy, dy), P(6,2), "$v$", tr);
+  veloc(pY2 + P( 0, -dy), P(2,-4), "$v$", br);
+  veloc(pZ2 + P(dy, -dy), P(2,-4), "$v$", br);
+
+  label(O1, P(0,-4), "$K$", b);
+  label(O2 - P(0, dy), P(0,-4), "$K'$", b);
+
+  label(pX1, P(2,-2), "$x$", br);
+  label(pX2, P(2, 2), "$x'$", tr);
+
+  label(pY1, P(-2, 2), "$y$", tl);
+  label(pY2, P(-2, 2), "$y'$", tl);
+
+  label(pZ1, P(0, 2), "$z$", t);
+  label(pZ2, P(0, 2), "$z'$", t);
+
+  tikz_format();
+  end();
+}

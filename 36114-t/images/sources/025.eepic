@@ -1,0 +1,42 @@
+%% Generated from 025.xp on Tue May 10 18:52:03 EDT 2011 by
+%% ePiX-1.2.4
+%% 
+%%   Cartesian bounding box: [-2,2] x [-0.25,0.25]
+%%   Actual size: 4 x 0.5in
+%%   Figure offset: left by 0in, down by 0in
+%% 
+%% usepackages tikz
+%% 
+\xdefinecolor{rgb_000000}{rgb}{0,0,0}%
+\begin{tikzpicture}
+\pgfsetlinewidth{0.4pt}
+\useasboundingbox (0in,0in) rectangle (4in,0.5in);
+\pgfsetlinewidth{0.8pt}
+\draw (0in,0.25in)--(2in,0.25in)--(4in,0.25in);
+\draw (0.25in,0.35in)--(2in,0.35in)--(3.75in,0.35in);
+\draw (3.75in,0.35in)--(3.8in,0.4in)--(3.85in,0.45in);
+\pgftext[at={\pgfpoint{2in}{0.25in}}] {\makebox(0,0){\hbox{\color{rgb_000000}$\rule{0.5pt}{6pt}$}}}
+\pgftext[at={\pgfpoint{2in}{0.35in}}] {\makebox(0,0){\hbox{\color{rgb_000000}$\rule{0.5pt}{6pt}$}}}
+\pgftext[at={\pgfpoint{1in}{0.25in}}] {\makebox(0,0){\hbox{\color{rgb_000000}$\rule{0.5pt}{12pt}$}}}
+\pgftext[at={\pgfpoint{1in}{0.35in}}] {\makebox(0,0){\hbox{\color{rgb_000000}$\rule{0.5pt}{12pt}$}}}
+\pgftext[at={\pgfpoint{3in}{0.25in}}] {\makebox(0,0){\hbox{\color{rgb_000000}$\rule{0.5pt}{12pt}$}}}
+\pgftext[at={\pgfpoint{3in}{0.35in}}] {\makebox(0,0){\hbox{\color{rgb_000000}$\rule{0.5pt}{12pt}$}}}
+\draw (0.25in,0.45in)--(0.75in,0.45in);
+\pgfsetfillcolor{rgb_000000}
+\draw [fill](0.736163in,0.45in)--(0.722326in,0.436163in)--
+  (0.75in,0.45in)--(0.722326in,0.463837in)--(0.736163in,0.45in)--cycle;
+\pgftext[at={\pgfpoint{0.277674in}{0.477674in}}] {\makebox(0,0)[bl]{\hbox{\color{rgb_000000}$v$}}}
+\draw (3.25in,0.45in)--(3.75in,0.45in);
+\draw [fill](3.73616in,0.45in)--(3.72233in,0.436163in)--
+  (3.75in,0.45in)--(3.72233in,0.463837in)--(3.73616in,0.45in)--cycle;
+\pgftext[at={\pgfpoint{3.27767in}{0.477674in}}] {\makebox(0,0)[bl]{\hbox{\color{rgb_000000}$v$}}}
+\draw (2.125in,0.55in)--(2.625in,0.55in);
+\draw [fill](2.61116in,0.55in)--(2.59733in,0.536163in)--
+  (2.625in,0.55in)--(2.59733in,0.563837in)--(2.61116in,0.55in)--cycle;
+\pgftext[at={\pgfpoint{2.06965in}{0.55in}}] {\makebox(0,0)[r]{\hbox{\color{rgb_000000}$M'$}}}
+\pgftext[at={\pgfpoint{1in}{0.11163in}}] {\makebox(0,0)[t]{\hbox{\color{rgb_000000}$A$}}}
+\pgftext[at={\pgfpoint{2in}{0.11163in}}] {\makebox(0,0)[t]{\hbox{\color{rgb_000000}$M$}}}
+\pgftext[at={\pgfpoint{3in}{0.11163in}}] {\makebox(0,0)[t]{\hbox{\color{rgb_000000}$B$}}}
+\pgftext[at={\pgfpoint{3.90535in}{0.45in}}] {\makebox(0,0)[l]{\hbox{\color{rgb_000000}\textit{Train}}}}
+\pgftext[at={\pgfpoint{3.66791in}{0.139304in}}] {\makebox(0,0)[tl]{\hbox{\color{rgb_000000}\textit{Embankment}}}}
+\end{tikzpicture}

@@ -1,0 +1,50 @@
+/* -*-ePiX-*- */
+#include "epix.h"
+using namespace ePiX;
+
+P f(double u, double v)
+{
+  double x(u*(1 - 0.25*exp(-v)) + 0.25*v*v),
+    y(v*(1 + 0.125*exp(0.5*u)) - 0.2*u*u);
+  return P(x + y, y - x);
+}
+
+const double MAX(2), maxx(1.25);
+
+domain R(P(-1,-1), P(maxx,1), mesh(60,60));
+
+int main()
+{
+  picture(P(-MAX,-MAX), P(MAX,MAX), "3 x 2in");
+
+  begin();
+  bold();
+
+  double mu1(-0.8), mu2(-0.1), mu3(0.6),
+    mv1(-0.6), mv2(0), mv3(0.5);
+
+  P u1(f(mu1, 1)), u2(f(mu2, 1)), u3(f(mu3, 1)),
+    v1(f(maxx, mv1)), v2(f(maxx, mv2)), v3(f(maxx, mv3)),
+    O(f(mu3, mv1));
+
+  plot(f, R.slice1(mu1));
+  plot(f, R.slice1(mu2));
+  plot(f, R.slice1(mu3));
+
+  plot(f, R.slice2(mv1));
+  plot(f, R.slice2(mv2));
+  plot(f, R.slice2(mv3));
+
+  dot(O, P(-4,-10), "$P$", b);
+
+  label(u1, P(4,0), "$u=1$", r);
+  label(u2, P(4,0), "$u=2$", r);
+  label(u3, P(4,0), "$u=3$", r);
+
+  label(v1, P(4,0), "$v=1$", r);
+  label(v2, P(4,0), "$v=2$", r);
+  label(v3, P(4,0), "$v=3$", r);
+
+  tikz_format();
+  end();
+}
