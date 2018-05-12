@@ -1,0 +1,36 @@
+_repo: Relativity--The-Special-and-the-General-TheoryA-Popular-Exposition-3rd-ed._36114
+_version: 0.1.0
+alternative_title: "Relativity: The Special and the General Theory\r\nA Popular Exposition,\
+  \ 3rd ed."
+contributor:
+  translator:
+    agent_name: Lawson, Robert W. (Robert William)
+    gutenberg_agent_id: '33534'
+    url: http://www.gutenberg.org/2009/agents/33534
+covers:
+- cover_type: generated
+  image_path: cover.png
+creator:
+  author:
+    agent_name: Einstein, Albert
+    birthdate: 1879
+    deathdate: 1955
+    gutenberg_agent_id: '1630'
+    url: http://www.gutenberg.org/2009/agents/1630
+    wikipedia: http://en.wikipedia.org/wiki/Albert_Einstein
+description: ''
+gutenberg_bookshelf: Physics
+gutenberg_issued: '2011-05-15'
+gutenberg_type: Text
+identifiers:
+  gutenberg: '36114'
+language: en
+publisher: Project Gutenberg
+rights: Public domain in the USA.
+rights_url: http://creativecommons.org/about/pdm
+subjects:
+- !lcsh 'Relativity (Physics)'
+- !lcc 'QC'
+title: "Relativity: The Special & the General Theory\r\nA Popular Exposition, 3rd\
+  \ ed."
+url: http://www.gutenberg.org/ebooks/36114
