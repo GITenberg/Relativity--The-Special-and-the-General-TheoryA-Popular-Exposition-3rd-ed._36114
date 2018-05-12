@@ -19,6 +19,8 @@ creator:
     url: http://www.gutenberg.org/2009/agents/1630
     wikipedia: http://en.wikipedia.org/wiki/Albert_Einstein
 description: ''
+edition_identifiers:
+  edition_id: http://www.gutenberg.org/ebooks/36114#Relativity--The-Special-and-the-General-TheoryA-Popular-Exposition-3rd-ed.
 gutenberg_bookshelf: Physics
 gutenberg_issued: '2011-05-15'
 gutenberg_type: Text
